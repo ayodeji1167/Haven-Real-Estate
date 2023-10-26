@@ -1,6 +1,6 @@
 const fonts = {
-  heading: `'BR Firma',sans-serif`,
-  body: `'DM Sans',sans-serif`,
+  heading: `'Switzer',sans-serif`,
+  body: `'Switzer',sans-serif`,
 };
 
 const fontSizes = {
@@ -26,50 +26,45 @@ const fontWeights = {
 
 const textStyles = {
   h1: {
-    fontSize: ['4xl', '5xl'],
-    fontWeight: 'bold',
-    lineHeight: 'auto',
+    fontSize: '64px',
+    lineHeight: '72px',
     fontFamily: 'heading',
   },
   h2: {
-    fontSize: ['3xl', '4xl'],
-    fontWeight: 'bold',
+    fontSize: '48px',
     fontFamily: 'heading',
-    lineHeight: 'auto',
+    lineHeight: '56px',
   },
   h3: {
-    fontSize: ['2xl', '3xl'],
-    fontWeight: 'semibold',
-    lineHeight: 'auto',
+    fontSize: '40px',
+    lineHeight: '48px',
     fontFamily: 'heading',
   },
-  h4: {
-    fontSize: ['xl', '2xl'],
-    fontWeight: 'semibold',
-    fontFamily: 'heading',
-    lineHeight: 'auto',
-  },
-  h5: {
-    fontSize: ['lg', 'xl'],
-    fontWeight: 'semibold',
-    lineHeight: 'auto',
-    fontFamily: 'heading',
-  },
-  p: {
-    fontSize: { base: '14px', md: '16px' },
-    fontWeight: 'regular',
-    lineHeight: '165%',
+
+  p1: {
+    fontSize: '32px',
+    lineHeight: '48px',
     fontFamily: 'body',
   },
-  subHeading: {
-    fontSize: { base: '20px', md: '26px' },
-    fontWeight: 'bold',
-    textAlign: 'center',
+  p2: {
+    fontSize: '24px',
     fontFamily: 'heading',
+    lineHeight: '32px',
   },
-  small: {
-    fontSize: { base: '10px', md: '12px' },
+  p3: {
+    fontSize: '20px',
     fontFamily: 'body',
+    lineHeight: '28px',
+  },
+  p4: {
+    fontSize: '16px',
+    fontFamily: 'body',
+    lineHeight: '24px',
+  },
+  p5: {
+    fontSize: '14px',
+    fontFamily: 'body',
+    lineHeight: '18px',
   },
 };
 
