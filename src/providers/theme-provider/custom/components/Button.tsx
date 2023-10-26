@@ -6,10 +6,12 @@ export const Button: ComponentDefaultProps = {
   },
   baseStyle: {
     variant: 'solid',
-    borderRadius: '10px',
+    borderRadius: '4px',
+    lineHeight: '24px',
+    fontSize: '16px',
     fontFamily: 'body',
     minHeight: '45px',
-    fontSize: { base: '14px', md: '16px' },
+    fontWeight: '500',
   },
 
   variants: {
@@ -24,7 +26,6 @@ export const Button: ComponentDefaultProps = {
         borderRadius: '10px',
       },
       _hover: {
-        border: '8px solid',
         borderColor: 'primary.100',
         boxShadow: ' 0px 0px 27px rgba(24, 19, 162, 0.2)',
         bgColor: 'brand.primary.500',

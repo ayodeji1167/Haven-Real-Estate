@@ -4,7 +4,7 @@ import { colors, components, fontConfig } from './custom';
 
 const config: ThemeConfig = {
   useSystemColorMode: false,
-  cssVarPrefix: 'meldtech',
+  cssVarPrefix: 'haven',
 };
 
 export const theme = extendTheme({
