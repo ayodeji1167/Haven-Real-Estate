@@ -2,25 +2,9 @@ import { Box, Button, Center, chakra, Flex, Image, Input, Text } from '@chakra-u
 import hero from '@/assets/images/landing/home/hero/heroImage.png';
 import Header from '../Layout/Header';
 import { ReactComponent as SearchIcon } from '@/assets/icons/search.svg';
-import { ReactComponent as ArrowDown } from '@/assets/icons/arrow-down.svg';
+import { DropDown } from './DropDown';
+import { LocationContent, LocationHeader } from './LocationSearch';
 
-function DropDownButton({ name }: { name: string }) {
-  return (
-    <Center
-      h={'2.8rem'}
-      w={'9rem'}
-      rounded="12px"
-      border="1px solid"
-      borderColor={'gray.100'}
-      bg={'white'}
-      gap={'1rem'}
-      cursor={'pointer'}
-    >
-      <Text color={'gray.700'}>{name}</Text>
-      <ArrowDown />
-    </Center>
-  );
-}
 export default function Hero() {
   return (
     <Box
@@ -71,9 +55,8 @@ export default function Hero() {
               />
             </Flex>
             <Flex justifyContent={'space-between'}>
-              <DropDownButton name="Location" />
-              <DropDownButton name="Property type" />
-              <DropDownButton name="Price range" />
+              <DropDown name="Location" header={<LocationHeader />} content={<LocationContent />} />
+
               <Button rounded={'12px'}>Search</Button>
             </Flex>
           </Box>

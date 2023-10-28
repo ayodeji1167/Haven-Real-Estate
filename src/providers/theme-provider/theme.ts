@@ -12,4 +12,11 @@ export const theme = extendTheme({
   colors,
   ...fontConfig,
   components,
+  styles: {
+    global: {
+      'html, body': {
+        WebkitTapHighlightColor: 'transparent',
+      },
+    },
+  },
 });
