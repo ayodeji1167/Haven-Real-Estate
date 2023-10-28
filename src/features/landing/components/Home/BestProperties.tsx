@@ -4,7 +4,7 @@ import { GoArrowRight } from 'react-icons/go';
 
 export default function BestProperties() {
   return (
-    <Container maxW={'94%'} pt={'4rem'}>
+    <Container maxW={'94%'} pt={'4rem'} mb={'10rem'}>
       <Box mb={'4rem'}>
         <Text mb={'0.5rem'} color={'gray.700'} textStyle={'h3'} as={'h1'}>
           Best properties for sale
