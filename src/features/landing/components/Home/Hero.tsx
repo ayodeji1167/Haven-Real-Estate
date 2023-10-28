@@ -4,6 +4,9 @@ import Header from '../Layout/Header';
 import { ReactComponent as SearchIcon } from '@/assets/icons/search.svg';
 import { DropDown } from './DropDown';
 import { LocationContent, LocationHeader } from './LocationSearch';
+import { locations } from '@/data/landing/home/location';
+import { propertyType } from '@/data/landing/home/propertyType';
+import { CustomSlider } from './CustomSlider';
 
 export default function Hero() {
   return (
@@ -55,7 +58,21 @@ export default function Hero() {
               />
             </Flex>
             <Flex justifyContent={'space-between'}>
-              <DropDown name="Location" header={<LocationHeader />} content={<LocationContent />} />
+              <DropDown
+                name="Location"
+                header={<LocationHeader name="Location" isSearchable />}
+                content={<LocationContent data={locations} />}
+              />
+              <DropDown
+                name="Property type"
+                header={<LocationHeader name="Property type" isSearchable={false} />}
+                content={<LocationContent data={propertyType} />}
+              />
+              <DropDown
+                name="Price range"
+                header={<LocationHeader name="Price range" />}
+                content={<CustomSlider />}
+              />
 
               <Button rounded={'12px'}>Search</Button>
             </Flex>

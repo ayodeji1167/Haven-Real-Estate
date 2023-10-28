@@ -1,4 +1,4 @@
-export const locations = [
+export const locations: Array<string> = [
   'Eket, Akwa Ibom State',
   'Esuk Oron, Akwa Ibom State',
   'Ikot Ekpene, Akwa Ibom State',
