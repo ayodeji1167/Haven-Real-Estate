@@ -20,7 +20,7 @@ export default function TrendingProperties() {
     setHoverStates(updatedStates);
   };
   return (
-    <Container maxW={'94%'}>
+    <Container maxW={'94%'} mb={'10rem'}>
       <Flex mb={'4rem'} alignItems={'center'} justifyContent={'space-between'}>
         <Box>
           <Text mb={'0.5rem'} color={'gray.700'} textStyle={'h3'} as={'h1'}>

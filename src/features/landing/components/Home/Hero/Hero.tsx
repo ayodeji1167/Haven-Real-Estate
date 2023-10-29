@@ -1,6 +1,6 @@
 import { Box, Button, Center, chakra, Flex, Image, Input, Text } from '@chakra-ui/react';
 import hero from '@/assets/images/landing/home/hero/heroImage.png';
-import Header from '../Layout/Header';
+import Header from '../../Layout/Header';
 import { ReactComponent as SearchIcon } from '@/assets/icons/search.svg';
 import { DropDown } from './DropDown';
 import { LocationContent, LocationHeader } from './LocationSearch';
